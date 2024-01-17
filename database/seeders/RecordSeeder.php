@@ -18,48 +18,15 @@ class RecordSeeder extends Seeder
     {
         //
         
-        DB::table('records')->insert([
-                'days' => '1/1',
-                'temputure' => '36.5°',
-                'symptoms' => '調子が良い。',
-                'approch' => '',
+        DB::table('record')->insert([
+                'day' => '1/1',
+                'temperature' => '36.5°',
+                'symptoms' => '咳、鼻水、頭痛',
+                'approach' => '薬を飲んで寝た',
                 'bookmark' => 'つける、つけない',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
-         DB::table('records')->insert([
-                'days' => '1/2',
-                'temperature' => '36.6°',
-                'symptoms' => '普通',
-                'approch' => '',
-                'bookmark' => 'つける、つけない',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
-         DB::table('records')->insert([
-                'days' => '1/3',
-                'temperature' => '36.8°',
-                'symptoms' => '咳、頭痛、吐き気',
-                'approch' => '薬を飲んで安静にしていた。',
-                'bookmark' => 'つける、つけない',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
-         DB::table('records')->insert([
-                'temperature' => '37.5°',
-                'symptoms' => '咳、頭痛、吐き気',
-                'approch' => '病院に行った。',
-                'bookmark' => 'つける、つけない',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
-         DB::table('records')->insert([
-                'temperature' => '36.7°',
-                'symptoms' => '咳、頭痛、吐き気',
-                'approch' => '薬を飲んで安静にしていた。',
-                'bookmark' => 'つける、つけない',
-                'created_at' => new DateTime(),
-                'updated_at' => new DateTime(),
-         ]);
+    
     }
 }

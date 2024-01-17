@@ -13,9 +13,9 @@
         </h1>
         <div class="content">
             <div class="content__post">
-                <h3>症状</h3>
-                <h4>結果</h4>
-                <h5>処方薬</h5>
+                <h3>体温</h3>
+                <h4>症状</h4>
+                <h5>対処の仕方</h5>
                 <p>{{ $post->body }}</p>    
             </div>
         </div>

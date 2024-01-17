@@ -12,11 +12,13 @@ class PostController extends Controller
     {
         
         return view('posts.index')->with(['posts' => $post->getPaginateByLimit()]);  
+        return view('records.index')->with(['records' => $post->getPaginateByLimit()]); 
     }
     
     public function show(Post $post)
     {
-        return view('posts.show')->with(['post' => $post]);
+        return view('posts.show')->with(['posts' => $post]);
+        return view('records.show')->with(['records' => $post]);
     }
     
 }
