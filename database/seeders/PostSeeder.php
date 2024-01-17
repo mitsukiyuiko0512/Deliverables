@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-// use Illuminate\Support\Facades\DB;　
-// use DateTime;　
+use Illuminate\Support\Facades\DB;
+use DateTime;
 
 class PostSeeder extends Seeder
 {
@@ -19,9 +19,9 @@ class PostSeeder extends Seeder
         //
         
         DB::table('posts')->insert([
-                'symptoms' => '症状',
-                'result' => '診察結果',
-                'drug' => '処方薬',
+                'symptoms' => '咳、頭痛、吐き気',
+                'result' => '風邪',
+                'drug' => '咳止め薬、頭痛薬、吐き気止め',
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
