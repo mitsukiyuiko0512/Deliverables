@@ -8,6 +8,7 @@
     </head>
     <body>
         <h1>過去の体調記録</h1>
+        <a href='/posts/create'>create</a>
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>

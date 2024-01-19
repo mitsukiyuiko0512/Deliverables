@@ -8,14 +8,15 @@
     </head>
     <body>
         <h1>過去の体調記録</h1>
-        <div class='posts'>
-            @foreach ($posts as $post)
-                <div class='post'>
-                    <h2 class='title'>
-                     <p class='temperature'>{{ $post->temperature }}</p>
-                     <p class='symptoms'>{{ $post->symptoms }}</p>
-                     <p class='approach'>{{ $post->approach }}</p>
-                     <a href="/records/{{ $post->id }}">{{ $post->title }}</a>
+        <a href='/records/create'>create</a>
+        <div class='records'>
+            @foreach ($records as $record)
+                <div class='record'>
+                    <h2 class='body'>
+                     <p class='temperature'>{{ $record->temperature }}</p>
+                     <p class='symptoms'>{{ $record->symptoms }}</p>
+                     <p class='approach'>{{ $record->approach }}</p>
+                     <a href="/records/{{ $record->id }}">{{ $record->body }}</a>
                     </h2>
                  </div>
             @endforeach    

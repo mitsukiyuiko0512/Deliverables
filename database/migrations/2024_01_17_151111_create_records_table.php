@@ -13,13 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('record', function (Blueprint $table) {
+        Schema::create('records', function (Blueprint $table) {
             $table->id();
-            $table->string('day');
-            $table->string('temperature');
+            $table->double('temperature',3,1);
             $table->string('symptoms');
             $table->string('approach');
-            $table->string('bookmark');
+            $table->integer('bookmark');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -32,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('record');
+        Schema::dropIfExists('records');
     }
 };

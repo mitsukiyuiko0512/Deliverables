@@ -18,12 +18,11 @@ class RecordSeeder extends Seeder
     {
         //
         
-        DB::table('record')->insert([
-                'day' => '1/1',
-                'temperature' => '36.5°',
+        DB::table('records')->insert([
+                'temperature' => 36.5,
                 'symptoms' => '咳、鼻水、頭痛',
                 'approach' => '薬を飲んで寝た',
-                'bookmark' => 'つける、つけない',
+                'bookmark' => 1,
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);

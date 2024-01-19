@@ -9,18 +9,22 @@
     </head>
     <body>
         <h1 class="title">
-            {{ $post->title }}
+            {{ $record->title }}
         </h1>
         <div class="content">
-            <div class="content__post">
+            <div class="content__record">
                 <h3>体温</h3>
                 <h4>症状</h4>
                 <h5>対処の仕方</h5>
-                <p>{{ $post->body }}</p>    
+                <p>{{ $record->body }}</p>    
             </div>
+        </div>
+        <div class="edit">
+            <a href="/records/{{ $record->id }}/edit">edit</a>
         </div>
         <div class="footer">
             <a href="/">戻る</a>
         </div>
+        
     </body>
 </html>
