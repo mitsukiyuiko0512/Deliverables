@@ -9,15 +9,15 @@
         <form action="/posts" method="POST">
             @csrf
             <div class="symptoms">
-                <h2>symptoms</h2>
+                <h2>症状</h2>
                 <textarea name="post[symptoms]" placeholder="咳、頭痛"></textarea>
             </div>
             <div class="result">
-                <h3>result</h3>
+                <h3>診断結果</h3>
                 <textarea name="post[result]" placeholder="風邪と診断され、薬を処方された。"></textarea>
             </div>
             <div class="drug">
-                <h4>drug</h4>
+                <h4>処方薬</h4>
                 <textarea name="post[drug]" placeholder="咳止め薬、頭痛薬"></textarea>
             </div>
             <input type="submit" value="保存"/>

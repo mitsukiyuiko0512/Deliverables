@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Blog</title>
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+       
     </head>
     <body>
     <h1 class="title">編集画面</h1>
@@ -17,12 +16,15 @@
                 <input type='text' name='record[temperature]' value="{{ $record->temperature }}">
             </div>
             <div class='content__symptoms'>
-                <h2>症状</h2>
+                <h3>症状</h3>
                 <input type='text' name='record[symptoms]' value="{{ $record->symptoms }}">
             </div>
             <div class='content__approach'>
-                <h2>対処の仕方</h2>
+                <h4>対処の仕方</h4>
                 <input type='text' name='record[approach]' value="{{ $record->approach }}">
+            </div>
+            <h5>ブックマーク</h5>
+                <input type='text' name='record[bookmark]' value="{{ $record->bookmark }}">
             </div>
             <input type="submit" value="update">
         </form>

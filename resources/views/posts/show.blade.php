@@ -14,10 +14,13 @@
         <div class="content">
             <div class="content__post">
                 <h3>症状</h3>
-                <h4>結果</h4>
+                <h4>診断結果</h4>
                 <h5>処方薬</h5>
                 <p>{{ $post->body }}</p>    
             </div>
+        </div>
+        <div class="edit">
+            <a href="/posts/{{ $post->id }}/edit">edit</a>
         </div>
         <div class="footer">
             <a href="/">戻る</a>

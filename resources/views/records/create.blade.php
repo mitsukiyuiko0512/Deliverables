@@ -20,6 +20,10 @@
                 <h5>対処の方法</h5>
                 <textarea name="record[approach]" placeholder="薬を飲んで寝た。"></textarea>
             </div>
+            <div class="bookmark">
+                <h5>ブックマーク</h5>
+                <textarea name="record[bookmark]" placeholder="1"></textarea>
+            </div>
             <input type="submit" value="保存"/>
         </form>
         <div class="footer">

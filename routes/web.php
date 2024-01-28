@@ -35,6 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/records/{post}', [RecordController::class ,'show']);
     Route::get('/records/{record}/edit', [RecordController::class, 'edit']);
     Route::put('/records/{record}', [RecordController::class, 'update']);
+    Route::get('/posts/{post}/edit', [PostController::class, 'edit']);
+    Route::put('/posts/{post}', [PostController::class, 'update']);
+    Route::delete('/records/{record}', [RecordController::class,'delete']);
+    Route::delete('/posts/{post}', [PostController::class,'delete']);
     
 });
 
